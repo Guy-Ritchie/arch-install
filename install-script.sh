@@ -41,8 +41,8 @@ fi
 
 # Updating mirrorlist by replacing existing one, with custom mirrorlist
 echo "\nCloning custom mirrorlist to have nearby and fastest mirrors available.\n"
-git clone https://github.com/Guy-Ritchie/arch-mirrorlist.git
-cd arch-mirrorlist
+_git clone https://github.com/Guy-Ritchie/arch-install.git
+cd arch-install
 mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.old
 if mv mirrorlist /etc/pacman.d/
 then echo "\nGit clone, successful. Custom Mirrorlist copied to local machine."
